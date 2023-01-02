@@ -61,6 +61,10 @@ form input {
   width: 100%;
 }
 
+a {
+  color: #0d0d0e;
+  text-decoration: none;
+}
 form button {
   position: absolute;
   top: 2px;
