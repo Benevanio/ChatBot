@@ -65,10 +65,14 @@ form button {
   position: absolute;
   top: 2px;
   right: 1px;
-  background-color: #10cce0;
+  background-color: #0d0d0e;
   border: 0;
   border-radius: 50px;
   color: #fff;
   font-size: 16px;
   padding: 13px 30px;
+}
+form button:hover {
+  background-color: #0d0d0e;
+  color: #fff;
 }
