@@ -4,8 +4,8 @@
   "description": "Chat com webSockets(Socket IO) e Node js",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "Dev": "nodemon server.js"
+    "start": "nodemon server.js"
+    
   },
   "repository": {
     "type": "git",
