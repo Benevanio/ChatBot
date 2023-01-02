@@ -2,9 +2,10 @@
   "name": "chatbot",
   "version": "1.0.0",
   "description": "Chat com webSockets(Socket IO) e Node js",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "Dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
