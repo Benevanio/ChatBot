@@ -12,12 +12,17 @@ app.get('/', (req,res,next) => {
     res.sendFile(__dirname + '/index.html');
 });
 io.on('connection', (socket) => {
-    console.log('User connected');
+    console.log('User connected' + socket.id);
     socket.on('disconnect', () => {
         console.log('User disconnected');
     });
     socket.on('chat message', (msg) => {
         console.log('message: ' + msg);
         io.emit('chat message', msg);
+    });
+    //usuario conectado
+    socket.on('user connected', (user) => {
+        console.log('User connected: ' + user);
+        io.emit('user connected', user);
     });
 });
