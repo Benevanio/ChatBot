@@ -109,7 +109,7 @@ form button:hover {
         $(function () {
             const socket = io();
             $('#form').submit(function(e){
-                e.preventDefault(); // prevents page reloading
+                e.preventDefault();
                 socket.emit('chat message', $('#msg').val());
                 $('#msg').val('');
                 return false;
